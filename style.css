@@ -36,16 +36,32 @@ h2 {
 /* border:1px solid black; no inicio para poder ver o layout depois tirar da div presentation-container, tava 600px e ele colocou 50vh ou seja 500 px? */
 #presentation-container {
     padding: 2.5rem 7.5rem;
-    height: 50vh;
+    height: 100vh;
+    background-image: url(./assets/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-
+/*   calcula o posicionamento quando nao tem o flex box, #presentation  position: relative; top: calc(50% - 9rem);*/
 #presentation {
     width: 37.5rem;
-    position: relative;
-    top: calc(50% - 9rem);
 }
+
+#qualities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+#qualities > img {
+    margin: 0 2.5rem ;
+}
+
 .container {
-    padding: 10rem 7.5rem;
+    padding: 5rem 7.5rem;
     text-align: center;
 }
 
@@ -59,4 +75,20 @@ h2 {
 
 .container > button {
     margin-top: 2rem;
+    transition: opacity 0.5s ease-in-out, transfirm 0.5s .2s;;
 }
+
+.container > button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.background-gradient {
+    background: linear-gradient(180deg,#fff,#d9d9d9);
+}
+
+.background-red {
+    background-color: #F84646;
+    color: #fff;
+}
+
